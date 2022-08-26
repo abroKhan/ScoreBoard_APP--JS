@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- GOOGLE Fonts CDN link -->
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom Styling CSS Link -->
+    <link rel="stylesheet" href="style.css">
+    <title>Points Counter APP</title>
+</head>
+
+<body>
+    <div class="counter__app">
+        <h1>Match Points Counter</h1>
+        <div class="app__wrapper">
+            <div class="app__content">
+                <h3>HOME</h3>
+                <span id="points_el1" class="point__board">00</span>
+                <div class="btns">
+                    <button onclick="add1Point()">+1</button>
+                    <button onclick="add2Points()">+2</button>
+                    <button onclick="add3Points()">+3</button>
+                </div>
+            </div>
+            <div class="app__content">
+                <h3>GUEST</h3>
+                <span id="points_el2" class="point__board">00</span>
+                <div>
+                    <button onclick="add1PointEl1()">+1</button>
+                    <button onclick="add2PointsEl2()">+2</button>
+                    <button onclick="add3PointsEl3()">+3</button>
+                </div>
+            </div>
+        </div>
+        <p>When Score reached 60, reset the Score.</p>
+        <button class="btn" id="reset_el" onclick="resetScore()">RESET SCORE</button>
+    </div>
+
+    <!-- Custom JS Link -->
+    <script src="script.js"></script>
+</body>
+
+</html>
