@@ -6,7 +6,7 @@
 body {
     margin: 0;
     font-family: 'Josefin Sans', sans-serif;
-    background: linear-gradient(pink, lightblue,orange);
+    background: linear-gradient(pink, lightblue, orange);
     color: white;
     display: flex;
     justify-content: center;
@@ -99,6 +99,11 @@ button {
 
     .app__content h3 {
         font-size: 18px;
+    }
+
+    .point__board {
+        width: 75px;
+        height: 75px;
     }
 
 }
